@@ -16,7 +16,7 @@
 
 # Get the long list of APNs
 PRODUCT_COPY_FILES += \
-    vendor/gzosp/prebuilt/common/etc/apns-conf.xml:system/etc/apns-conf.xml
+    vendor/validus/prebuilt/common/etc/apns-conf.xml:system/etc/apns-conf.xml
 
 # NFC config
 PRODUCT_COPY_FILES += \
@@ -31,13 +31,13 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/treble_common.mk)
 $(call inherit-product, device/huawei/berkeley/device.mk)
 
 # Inherit some common GZOSP stuff.
-$(call inherit-product, vendor/gzosp/config/common_full_phone.mk)
+$(call inherit-product, vendor/validus/config/common_full_phone.mk)
 
 # Disable dynamic partition size
 PRODUCT_USE_DYNAMIC_PARTITION_SIZE := false
 
 # Device identifier. This must come after all inclusions
-PRODUCT_NAME := gzosp_berkeley
+PRODUCT_NAME := validus_berkeley
 PRODUCT_DEVICE := berkeley
 PRODUCT_BRAND := Huawei
 PRODUCT_MODEL := Honor View 10
