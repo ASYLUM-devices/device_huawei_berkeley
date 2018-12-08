@@ -1,7 +1,7 @@
 [
   {
     "remote": "github",
-    "repository": "ValidusOs/device_huawei_kirin970-common",
+    "repository": "ValidusOs-Devices/device_huawei_kirin970-common",
     "target_path": "device/huawei/kirin970-common",
     "branch": "9.0"
   },
