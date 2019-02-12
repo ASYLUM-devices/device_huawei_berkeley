@@ -16,7 +16,7 @@
 
 # Get the long list of APNs
 PRODUCT_COPY_FILES += \
-    vendor/validus/prebuilt/common/etc/apns-conf.xml:system/etc/apns-conf.xml
+    vendor/asylum/prebuilt/common/etc/apns-conf.xml:system/etc/apns-conf.xml
 
 # NFC config
 PRODUCT_COPY_FILES += \
@@ -33,14 +33,14 @@ $(call inherit-product, device/huawei/berkeley/device.mk)
 # Inherit from custom vendor
 $(call inherit-product, vendor/huawei/HwCamera2/config.mk)
 
-# Inherit some common GZOSP stuff.
-$(call inherit-product, vendor/validus/config/common_full_phone.mk)
+# Inherit some common ASYLUM stuff.
+$(call inherit-product, vendor/asylum/config/common_full_phone.mk)
 
 # Disable dynamic partition size
 PRODUCT_USE_DYNAMIC_PARTITION_SIZE := false
 
 # Device identifier. This must come after all inclusions
-PRODUCT_NAME := validus_berkeley
+PRODUCT_NAME := asylum_berkeley
 PRODUCT_DEVICE := berkeley
 PRODUCT_BRAND := Huawei
 PRODUCT_MODEL := Honor View 10
